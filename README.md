@@ -1,3 +1,12 @@
+---
+title: endAML
+emoji: 🚀
+colorFrom: blue
+colorTo: purple
+sdk: docker
+pinned: false
+---
+
 # Memory-Web — GraphRAG Financial Crime Intelligence
 
 **Round 2 submission — GraphRAG Inference Hackathon by TigerGraph**
