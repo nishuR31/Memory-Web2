@@ -9,14 +9,24 @@ if ! command -v "$PYTHON_BIN" >/dev/null 2>&1; then
     PYTHON_BIN="python"
 fi
 
-# Auto-generate graph + vector artifacts if missing.
-if [ ! -f "data/graph.gml" ] || [ ! -f "data/chunks.json" ]; then
-    echo "[setup] Generating graph and vector data..."
-    "$PYTHON_BIN" generate_data.py
-    echo "[setup] Data generation complete."
+mkdir -p data
+
+# Download prebuilt FAISS index if missing
+if [ ! -f "data/vector_index.faiss" ]; then
+    echo "[setup] Downloading vector_index.faiss..."
+
+    wget \
+      "https://huggingface.co/datasets/dream691/endAML-assets/resolve/main/vector_index.faiss" \
+      -O "data/vector_index.faiss"
+
+    echo "[setup] FAISS index downloaded."
 fi
 
 HOST="${HOST:-0.0.0.0}"
-PORT="${PORT:-8000}"
+PORT="${PORT:-7860}"
 
-exec "$PYTHON_BIN" -m uvicorn main:app --host "$HOST" --port "$PORT"
+echo "[startup] Launching API on ${HOST}:${PORT}"
+
+exec "$PYTHON_BIN" -m uvicorn main:app \
+    --host "$HOST" \
+    --port "$PORT"
