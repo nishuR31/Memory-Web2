@@ -1,0 +1,3 @@
+*.faiss filter=xet diff=xet merge=xet -text
+*.npy filter=xet diff=xet merge=xet -text
+*.pkl filter=xet diff=xet merge=xet -text

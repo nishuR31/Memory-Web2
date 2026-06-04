@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&family=IBM+Plex+Mono:wght@500;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Manrope", "Segoe UI", sans-serif;
+  --font-mono: "IBM Plex Mono", "JetBrains Mono", monospace;
+}
+
+:root {
+  --gp-bg: #f4f7f4;
+  --gp-surface: #ffffff;
+  --gp-surface-muted: #f3f6f4;
+  --gp-border: #d5dfe0;
+  --gp-text: #0f172a;
+  --gp-text-muted: #334155;
+  --gp-text-subtle: #64748b;
+
+  --gp-accent: #0f9f6e;
+  --gp-accent-soft: #8ce3c2;
+  --gp-accent-ghost: #e6f8ef;
+  --gp-accent-strong: #0f6c4b;
+
+  --gp-info: #0f80c2;
+  --gp-info-soft: #9bd7f4;
+  --gp-info-ghost: #e9f6fd;
+
+  --gp-warning: #b7791f;
+
+  --gp-danger-soft: #f4b4c1;
+  --gp-danger-ghost: #fff1f4;
+  --gp-danger-strong: #b42345;
+
+  --gp-chart-grid: #c9dfd1;
+  --gp-chart-axis: #2b6f56;
+  --gp-chart-tooltip-bg: #f4fffa;
+  --gp-chart-tooltip-border: #8ce3c2;
+  --gp-chart-tooltip-text: #184134;
+  --gp-chart-bar: #0f9f6e;
+
+  --gp-graph-bg: #f0f4f8;
+  --gp-graph-grid: #e2e8f0;
+  --gp-graph-label-bg: #cbd5e1;
+  --gp-graph-node-bg: #ffffff;
+  --gp-graph-node-text: #0f172a;
+  --gp-graph-node-muted: #64748b;
+  --gp-graph-edge-idle: #94a3b8;
+  --gp-graph-edge-active: #059669;
+}
+
+html[data-theme='dark'] {
+  --gp-bg: #07130f;
+  --gp-surface: #0c1c17;
+  --gp-surface-muted: #102620;
+  --gp-border: #1f3b34;
+  --gp-text: #e8fff4;
+  --gp-text-muted: #c6f1dd;
+  --gp-text-subtle: #8cc7b0;
+
+  --gp-accent: #2dd4a5;
+  --gp-accent-soft: #2a6b56;
+  --gp-accent-ghost: #123328;
+  --gp-accent-strong: #8cf8d2;
+
+  --gp-info: #60c5f4;
+  --gp-info-soft: #2d5369;
+  --gp-info-ghost: #132a36;
+
+  --gp-warning: #f4bd60;
+
+  --gp-danger-soft: #7a2f46;
+  --gp-danger-ghost: #351521;
+  --gp-danger-strong: #ff9ab3;
+
+  --gp-chart-grid: #23453b;
+  --gp-chart-axis: #9ee5c8;
+  --gp-chart-tooltip-bg: #0d1f19;
+  --gp-chart-tooltip-border: #235b48;
+  --gp-chart-tooltip-text: #d2fce9;
+  --gp-chart-bar: #2dd4a5;
+
+  --gp-graph-bg: #020b07;
+  --gp-graph-grid: #0f2318;
+  --gp-graph-label-bg: #0c1e15;
+  --gp-graph-node-bg: #060f0a;
+  --gp-graph-node-text: #ecfdf5;
+  --gp-graph-node-muted: #6ee7b7;
+  --gp-graph-edge-idle: #1e3d2e;
+  --gp-graph-edge-active: #10b981;
+}
+
+@layer base {
+  * {
+    box-sizing: border-box;
+  }
+
+  html,
+  body,
+  #root {
+    min-height: 100%;
+  }
+
+  body {
+    margin: 0;
+    font-family: var(--font-sans);
+    color: var(--gp-text);
+    background: var(--gp-bg);
+    font-feature-settings: "rlig" 1, "calt" 1;
+    text-rendering: optimizeLegibility;
+  }
+
+  button,
+  input,
+  select,
+  textarea {
+    font: inherit;
+  }
+}
+
+@layer components {
+  #root {
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+
+  .react-flow__attribution {
+    display: none !important;
+  }
+
+  .react-flow__controls {
+    border-radius: 10px !important;
+    overflow: hidden;
+    border: 1px solid var(--gp-border) !important;
+    background: var(--gp-surface) !important;
+    box-shadow: 0 10px 24px rgba(15, 23, 42, 0.08) !important;
+  }
+
+  .react-flow__controls-button {
+    background: var(--gp-surface) !important;
+    border-bottom: 1px solid var(--gp-border) !important;
+    color: var(--gp-text-muted) !important;
+    fill: var(--gp-text-muted) !important;
+    transition: background-color 0.2s ease, color 0.2s ease !important;
+  }
+
+  .react-flow__controls-button:hover {
+    background: var(--gp-surface-muted) !important;
+    color: var(--gp-accent-strong) !important;
+    fill: var(--gp-accent-strong) !important;
+  }
+}

@@ -1,0 +1,362 @@
+[
+  {
+    "id": "SCN-001",
+    "category": "hidden_ownership",
+    "query": "Who is the ultimate beneficial owner of Meridian Holdings Ltd?",
+    "ground_truth": "Meridian Holdings Ltd is owned by BVI Shell Alpha, which is controlled by Kasarov Enterprises, which is owned by Viktor Kasarov.",
+    "expected_graphrag_advantage": "Requires 3-hop reconstruction. Vector RAG will only retrieve BVI Shell Alpha.",
+    "tags": [
+      "ownership",
+      "multi-hop",
+      "shell-company"
+    ]
+  },
+  {
+    "id": "SCN-002",
+    "category": "sanctions_exposure",
+    "query": "Does Vertex Capital have any indirect exposure to sanctioned entities?",
+    "ground_truth": "Yes, Vertex Capital funded Ocean Logistics, which shares directors with Harbor Group, which owns the sanctioned entity Red Star Shipping.",
+    "expected_graphrag_advantage": "Requires connecting loan to shared directors to ownership chain.",
+    "tags": [
+      "exposure",
+      "multi-hop",
+      "sanctions"
+    ]
+  },
+  {
+    "id": "SCN-003",
+    "category": "shared_infrastructure",
+    "query": "What links Horizon Group to sanctioned activities?",
+    "ground_truth": "Horizon Group shares a registered address at 123 Offshore Blvd with Phantom Logistics, a sanctioned entity.",
+    "expected_graphrag_advantage": "Address-sharing edge enables direct linkage despite weak lexical similarity.",
+    "tags": [
+      "infrastructure",
+      "address",
+      "sanctions"
+    ]
+  },
+  {
+    "id": "SCN-004",
+    "category": "shortest_laundering_chain",
+    "query": "What is the shortest exposure chain between Jonathan Doe and Global Launderers LLC?",
+    "ground_truth": "Jonathan Doe wired funds to Cayman Account 99X, held by Apex Ventures, which transacts with Global Launderers LLC.",
+    "expected_graphrag_advantage": "Shortest-path traversal directly reconstructs transaction hops.",
+    "tags": [
+      "shortest-path",
+      "laundering",
+      "transactions"
+    ]
+  },
+  {
+    "id": "SCN-005",
+    "category": "beneficial_ownership",
+    "query": "Who are the real beneficiaries behind the Cayman Islands trust structure used by Pacific Holdings?",
+    "ground_truth": "Pacific Holdings owns Cayman Trust Alpha, which controls Cyprus Entity Sigma, whose beneficiaries are Marco Bellini and Elena Voronova.",
+    "expected_graphrag_advantage": "4-hop beneficial ownership chain requires multi-hop traversal.",
+    "tags": [
+      "ownership",
+      "trust",
+      "offshore"
+    ]
+  },
+  {
+    "id": "SCN-006",
+    "category": "sanctions_network",
+    "query": "Map all entities within 2 degrees of separation from the sanctioned entity Black Sea Trading Co.",
+    "ground_truth": "Black Sea Trading Co directly controls Shell Co Delta, Shell Co Epsilon, and Shell Co Zeta (three shell companies), holds Bank Account BKA-001 and Bank Account BKA-002, and is registered by Registered Agent Omega. Second-degree links include Fortune500 Supplier Alpha and Fortune500 Supplier Beta via Shell Co Delta and Shell Co Epsilon respectively, giving seven total second-degree entities including two multinational suppliers.",
+    "expected_graphrag_advantage": "Breadth-first neighborhood traversal is graph-native.",
+    "tags": [
+      "sanctions",
+      "network",
+      "breadth"
+    ]
+  },
+  {
+    "id": "SCN-007",
+    "category": "pep_connection",
+    "query": "Does Helios Maritime connect to any politically exposed person through directors or family ties?",
+    "ground_truth": "Both Helios Maritime and Delta Chartering list Sergey Molotov as director. Sergey Molotov is affiliated with the Ministry of Energy.",
+    "expected_graphrag_advantage": "Requires director and family-relation edges across entities.",
+    "tags": [
+      "pep",
+      "director",
+      "family"
+    ]
+  },
+  {
+    "id": "SCN-008",
+    "category": "circular_ownership",
+    "query": "Is there a circular ownership loop involving Orion Ventures?",
+    "ground_truth": "Yes. Orion Ventures owns 40% of Nova Holdings, Nova controls Atlas Partners, and Atlas holds 15% of Orion Ventures.",
+    "expected_graphrag_advantage": "Cycle detection is difficult with chunk retrieval alone.",
+    "tags": [
+      "ownership",
+      "cycle",
+      "control"
+    ]
+  },
+  {
+    "id": "SCN-009",
+    "category": "transaction_flow",
+    "query": "Trace the transaction flow from Baltic Import Ltd to any sanctioned endpoint.",
+    "ground_truth": "Baltic Import paid Silver Route FZE, which funded Obsidian Brokers, which remitted to sanctioned Red Flag Minerals.",
+    "expected_graphrag_advantage": "Directed transaction edges preserve flow order.",
+    "tags": [
+      "transactions",
+      "sanctions",
+      "flow"
+    ]
+  },
+  {
+    "id": "SCN-010",
+    "category": "ubo_resolution",
+    "query": "Identify the ultimate controlling person behind Northbridge Advisory SPC.",
+    "ground_truth": "Northbridge Advisory SPC is controlled via Elm Foundation, which is controlled by Larch Nominees, ultimately controlled by Chang Wei.",
+    "expected_graphrag_advantage": "Multi-layer ownership resolution benefits from hop-based reasoning.",
+    "tags": [
+      "ubo",
+      "ownership",
+      "nominee"
+    ]
+  },
+  {
+    "id": "SCN-011",
+    "category": "shared_bank_account",
+    "query": "Which companies share bank account BA-77192 with Emerald Gate LLC?",
+    "ground_truth": "Emerald Gate LLC shares BA-77192 with Neptune Clearing and First Vale Trading.",
+    "expected_graphrag_advantage": "Entity-level account linkage is explicit in graph edges.",
+    "tags": [
+      "account",
+      "shared-resource",
+      "companies"
+    ]
+  },
+  {
+    "id": "SCN-012",
+    "category": "agent_network",
+    "query": "Show all shell companies registered by Blue Reef Corporate Services that are connected to sanctions risk.",
+    "ground_truth": "Blue Reef Corporate Services registered Harborline SA, Dune Path Ltd, and Copper Crest Inc.",
+    "expected_graphrag_advantage": "Registered-agent fan-out plus sanctions joins needs graph expansion.",
+    "tags": [
+      "agent",
+      "sanctions",
+      "shell-company"
+    ]
+  },
+  {
+    "id": "SCN-013",
+    "category": "director_overlap",
+    "query": "Do Luma Capital and Granite Freight have overlapping directors tied to high-risk entities?",
+    "ground_truth": "Both list Director Pavel Ivanenko, who also serves on sanctioned Black Harbor Metals.",
+    "expected_graphrag_advantage": "Director-overlap graph queries outperform semantic matching.",
+    "tags": [
+      "director",
+      "overlap",
+      "sanctions"
+    ]
+  },
+  {
+    "id": "SCN-014",
+    "category": "address_cluster",
+    "query": "Find the highest-risk cluster of entities sharing 88 Coral Street.",
+    "ground_truth": "88 Coral Street links Azure Import, Reefline Cargo, and sanctioned Tundra Export, forming a high-risk co-location cluster.",
+    "expected_graphrag_advantage": "Address-based clustering is graph neighborhood analysis.",
+    "tags": [
+      "address",
+      "cluster",
+      "risk"
+    ]
+  },
+  {
+    "id": "SCN-015",
+    "category": "cross_border_chain",
+    "query": "What is the cross-border chain from Lotus Finance to the sanctioned actor Iron Docks JSC?",
+    "ground_truth": "Lotus Finance funded Dubai Gateway FZE, which paid Baltic Resource OU, which transacted with Sanctioned Entity RU-99.",
+    "expected_graphrag_advantage": "Cross-jurisdiction multi-hop chain needs ordered path reconstruction.",
+    "tags": [
+      "cross-border",
+      "transactions",
+      "sanctions"
+    ]
+  },
+  {
+    "id": "SCN-016",
+    "category": "beneficial_ownership",
+    "query": "Is Atlas Medical Supplies ultimately controlled by any sanctioned individual?",
+    "ground_truth": "Yes. Atlas Medical Supplies is owned by Pearl Midco, controlled by North Channel Holdings, whose beneficiary is Sanctioned Individual Petrov.",
+    "expected_graphrag_advantage": "UBO path to sanctioned person requires layered ownership traversal.",
+    "tags": [
+      "ubo",
+      "sanctioned-individual",
+      "ownership"
+    ]
+  },
+  {
+    "id": "SCN-017",
+    "category": "transaction_velocity",
+    "query": "Which entities are central in rapid pass-through transfers linked to Riverbend Exchange?",
+    "ground_truth": "Riverbend Exchange routes transfers through Falcon Custody and then Tidebridge Finance.",
+    "expected_graphrag_advantage": "Centrality and pass-through detection rely on edge topology.",
+    "tags": [
+      "transactions",
+      "centrality",
+      "velocity"
+    ]
+  },
+  {
+    "id": "SCN-018",
+    "category": "pep_exposure",
+    "query": "Does Meridian Health Ventures have indirect exposure to any PEP through ownership?",
+    "ground_truth": "Yes. Meridian Health Ventures is held by Greyline Holdings, which is controlled by PEP Azarov Dmitri.",
+    "expected_graphrag_advantage": "Indirect PEP exposure is discovered via ownership and nominee edges.",
+    "tags": [
+      "pep",
+      "ownership",
+      "nominee"
+    ]
+  },
+  {
+    "id": "SCN-019",
+    "category": "layering_pattern",
+    "query": "Detect the layering pattern connecting Pinebridge Traders to sanctioned Nova Petroleum.",
+    "ground_truth": "Pinebridge Traders paid Solaris FZE, which paid Kappa Finance, which remitted to Sanctioned Entity CN-17.",
+    "expected_graphrag_advantage": "Layering pattern is a chained graph motif across transaction edges.",
+    "tags": [
+      "layering",
+      "transactions",
+      "sanctions"
+    ]
+  },
+  {
+    "id": "SCN-020",
+    "category": "shell_hierarchy",
+    "query": "How many shell layers exist between Crescent Bio Ltd and its final beneficiary?",
+    "ground_truth": "Three shell layers: Crescent Bio Ltd owned by Trident Holdings, owned by Silver Reed Corp, whose beneficiary is Beneficiary Morozov.",
+    "expected_graphrag_advantage": "Hop count is explicit in graph path length.",
+    "tags": [
+      "shell-company",
+      "hop-count",
+      "beneficiary"
+    ]
+  },
+  {
+    "id": "SCN-021",
+    "category": "shared_counterparty",
+    "query": "Which entities share the same sanctioned counterparty as Alta Freight Solutions?",
+    "ground_truth": "Alta Freight Solutions, Harborline SA, and Delta Marine Brokers all transact with sanctioned Red Lantern Commodities.",
+    "expected_graphrag_advantage": "Counterparty neighborhood query is graph-native.",
+    "tags": [
+      "counterparty",
+      "sanctions",
+      "transactions"
+    ]
+  },
+  {
+    "id": "SCN-022",
+    "category": "influence_chain",
+    "query": "Trace any influence chain from PEP Natalia Sokolova to Westbridge Infrastructure Fund.",
+    "ground_truth": "PEP Natalia Sokolova controls East Crown Foundation, which appoints directors at Westbridge Infrastructure Fund.",
+    "expected_graphrag_advantage": "Influence flows across control and appointment edges.",
+    "tags": [
+      "pep",
+      "influence",
+      "directors"
+    ]
+  },
+  {
+    "id": "SCN-023",
+    "category": "risk_propagation",
+    "query": "How does sanctions risk propagate from Arctic Minerals PLC to downstream entities?",
+    "ground_truth": "Sanctions risk propagates from Arctic Minerals PLC to Polar Shipping and then to Glacier Finance.",
+    "expected_graphrag_advantage": "Propagation across multi-hop downstream edges needs graph traversal.",
+    "tags": [
+      "sanctions",
+      "propagation",
+      "downstream"
+    ]
+  },
+  {
+    "id": "SCN-024",
+    "category": "board_interlocks",
+    "query": "Are there board interlocks between sanctioned firms and NovaTech Distribution?",
+    "ground_truth": "NovaTech Distribution shares board member Ivan Lebedev with sanctioned Volga Electronics.",
+    "expected_graphrag_advantage": "Board-interlock discovery is relationship-centric and multi-entity.",
+    "tags": [
+      "board",
+      "interlock",
+      "sanctions"
+    ]
+  },
+  {
+    "id": "SCN-025",
+    "category": "ownership_vs_transaction",
+    "query": "Is the connection between Crownline Energy and Red Banner Metals based on ownership or transactions?",
+    "ground_truth": "The link is transaction-based: Crownline Energy pays Helix Trade, which transacts with sanctioned Red Banner Metals; no direct ownership edge exists.",
+    "expected_graphrag_advantage": "Edge-type awareness distinguishes transaction links from ownership links.",
+    "tags": [
+      "edge-type",
+      "transactions",
+      "ownership"
+    ]
+  },
+  {
+    "id": "SCN-026",
+    "category": "geo_jurisdiction",
+    "query": "Which offshore jurisdictions appear in the chain behind Beacon Investment Partners?",
+    "ground_truth": "The chain includes BVI Holdco Gamma, Cayman SPV Theta, and Cyprus Trust Iota before reaching beneficiary Anton Kruger, behind Beacon Investment Partners.",
+    "expected_graphrag_advantage": "Jurisdiction extraction is more reliable from explicit graph path metadata.",
+    "tags": [
+      "jurisdiction",
+      "offshore",
+      "ownership"
+    ]
+  },
+  {
+    "id": "SCN-027",
+    "category": "beneficiary_split",
+    "query": "Does Summit Advisory Group have multiple final beneficiaries?",
+    "ground_truth": "Summit Advisory Group has two final beneficiaries: Layla Haddad and Omar Nasser.",
+    "expected_graphrag_advantage": "Graph traversal returns branching ownership trees, not single text snippets.",
+    "tags": [
+      "beneficiary",
+      "branching",
+      "ownership"
+    ]
+  },
+  {
+    "id": "SCN-028",
+    "category": "correspondent_banking",
+    "query": "Find any laundering path involving correspondent banks between Orion Pay and sanctioned Eastport Exports.",
+    "ground_truth": "Orion Pay routed transfers through Delta Correspondent AG, which paid Sanctioned Entity MX-44.",
+    "expected_graphrag_advantage": "Correspondent-bank steps require ordered multi-hop transaction paths.",
+    "tags": [
+      "banking",
+      "laundering",
+      "path"
+    ]
+  },
+  {
+    "id": "SCN-029",
+    "category": "network_bridge",
+    "query": "Which single entity acts as the bridge between Sunrise Commodities and sanctioned Polar Transit LLC?",
+    "ground_truth": "Frostline Brokers acts as the bridge between Sunrise Commodities and Sanctioned Entity OFAC-12.",
+    "expected_graphrag_advantage": "Bridge-node detection depends on path analysis.",
+    "tags": [
+      "bridge",
+      "path",
+      "sanctions"
+    ]
+  },
+  {
+    "id": "SCN-030",
+    "category": "ultimate_control",
+    "query": "Who ultimately controls the entities in the Lagoon Ventures laundering network?",
+    "ground_truth": "Lagoon Ventures, Coral Assets, and Nereid Trading are ultimately controlled by the same individual, Viktor Merenkov, through layered trusts.",
+    "expected_graphrag_advantage": "Common-controller analysis across a subgraph needs multi-entity graph reasoning.",
+    "tags": [
+      "common-controller",
+      "network",
+      "ubo"
+    ]
+  }
+]

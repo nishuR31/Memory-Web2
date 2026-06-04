@@ -1,0 +1,60 @@
+node_modules/
+frontend/node_modules/
+dist/
+frontend/dist/
+.env
+.env.*
+backend/.env
+backend/.env.*
+!backend/.env.example
+frontend/.env
+frontend/.env.*
+!frontend/.env.example
+.DS_Store
+backend/venv/
+backend/.venv/
+backend/__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+coverage/
+frontend/playwright-report/
+frontend/test-results/
+*.tsbuildinfo
+*.log
+*.pid
+*.out
+.run/
+.tmpimgvenv/
+run_app.sh
+
+.venv/
+__pycache__/
+*.pyc
+.env
+node_modules/
+# Generated backend data artifacts
+backend/data/sec_edgar/
+backend/data/wikipedia/
+# backend/data/vector_index.faiss
+# backend/data/graph.gml
+# backend/data/chunks.json
+backend/chroma_db/
+backend/chroma_db/**
+
+# Local, generated token proof copy at repo root
+benchmark_report.audit.json
+
+# Submission collateral / local prep notes
+docs/
+interview_prep.html
+interview_prep.md
+benchmark_metrics_by_scenario.md
+
+# Local alternate package-manager lockfile
+frontend/bun.lock
+*.faiss

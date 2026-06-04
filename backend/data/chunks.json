@@ -1,0 +1,452 @@
+[
+  {
+    "id": "b73cfcc1-a40d-4db7-b409-0ce2e471bb09",
+    "source": "synthetic_scenarios",
+    "chunk_index": 0,
+    "text": "Meridian Holdings Ltd is wholly owned by BVI Shell Alpha."
+  },
+  {
+    "id": "a7708f6d-c3dc-42bb-9296-b1148e1c8c8d",
+    "source": "synthetic_scenarios",
+    "chunk_index": 1,
+    "text": "BVI Shell Alpha's majority controller is Kasarov Enterprises."
+  },
+  {
+    "id": "2eff25ce-9d74-4f06-92ee-eb9c4a5ab106",
+    "source": "synthetic_scenarios",
+    "chunk_index": 2,
+    "text": "Viktor Kasarov is the sole owner of Kasarov Enterprises."
+  },
+  {
+    "id": "2c4ebba5-9641-469e-8ca8-8724d34a74c5",
+    "source": "synthetic_scenarios",
+    "chunk_index": 3,
+    "text": "Vertex Capital funded Ocean Logistics with a $5M loan."
+  },
+  {
+    "id": "1a4ce066-66c1-4b9a-9655-4db90728907c",
+    "source": "synthetic_scenarios",
+    "chunk_index": 4,
+    "text": "Ocean Logistics shares director Elena Rostova with Harbor Group."
+  },
+  {
+    "id": "9e6a6c9c-02f4-4622-b0f6-a53c5fe7fcb2",
+    "source": "synthetic_scenarios",
+    "chunk_index": 5,
+    "text": "Harbor Group owns Red Star Shipping, a sanctioned entity."
+  },
+  {
+    "id": "bb974b28-ed0f-4077-bcb9-842865638385",
+    "source": "synthetic_scenarios",
+    "chunk_index": 6,
+    "text": "Horizon Group is registered at 123 Offshore Blvd."
+  },
+  {
+    "id": "29997763-200d-4c9b-9f25-2286c84458e5",
+    "source": "synthetic_scenarios",
+    "chunk_index": 7,
+    "text": "Phantom Logistics is a known sanctioned entity at 123 Offshore Blvd."
+  },
+  {
+    "id": "ff9a7f34-099b-4884-900c-3fbf15488e02",
+    "source": "synthetic_scenarios",
+    "chunk_index": 8,
+    "text": "Jonathan Doe wired $150k to Cayman Account 99X."
+  },
+  {
+    "id": "b56b1c9b-faae-4cf2-b549-30488e3d4e79",
+    "source": "synthetic_scenarios",
+    "chunk_index": 9,
+    "text": "Cayman Account 99X is held by Apex Ventures."
+  },
+  {
+    "id": "13d2272f-37b3-4367-8575-98d6da04c124",
+    "source": "synthetic_scenarios",
+    "chunk_index": 10,
+    "text": "Apex Ventures transacted with Global Launderers LLC."
+  },
+  {
+    "id": "f3440f9b-ce32-4589-9be7-053e40ed2df9",
+    "source": "synthetic_scenarios",
+    "chunk_index": 11,
+    "text": "Pacific Holdings owns Cayman Trust Alpha."
+  },
+  {
+    "id": "d54d0b88-410c-4000-a9c4-2ba8837a8779",
+    "source": "synthetic_scenarios",
+    "chunk_index": 12,
+    "text": "Cayman Trust Alpha controls Cyprus Entity Sigma."
+  },
+  {
+    "id": "c5681ebc-f683-47f4-953d-e1d43f17e46d",
+    "source": "synthetic_scenarios",
+    "chunk_index": 13,
+    "text": "Cyprus Entity Sigma's beneficiaries are Marco Bellini and Elena Voronova."
+  },
+  {
+    "id": "e5ca4929-d9d3-4f11-8bbc-1b7fb8accb39",
+    "source": "synthetic_scenarios",
+    "chunk_index": 14,
+    "text": "Black Sea Trading Co directly controls Shell Co Delta, Shell Co Epsilon, and Shell Co Zeta."
+  },
+  {
+    "id": "25d3a635-e905-4d16-bdbe-b668849ff116",
+    "source": "synthetic_scenarios",
+    "chunk_index": 15,
+    "text": "Black Sea Trading Co holds Bank Account BKA-001 and BKA-002."
+  },
+  {
+    "id": "334482ee-1546-4f85-8315-96acc18487e5",
+    "source": "synthetic_scenarios",
+    "chunk_index": 16,
+    "text": "Black Sea Trading Co was incorporated by Registered Agent Omega."
+  },
+  {
+    "id": "131ee92f-80b1-40b8-a806-b70e0f4936a4",
+    "source": "synthetic_scenarios",
+    "chunk_index": 17,
+    "text": "Shell Co Delta transacted with Fortune500 Supplier Alpha."
+  },
+  {
+    "id": "8c94d97d-3f06-45fa-b667-7b9e3b998bc2",
+    "source": "synthetic_scenarios",
+    "chunk_index": 18,
+    "text": "Shell Co Epsilon transacted with Fortune500 Supplier Beta."
+  },
+  {
+    "id": "a49ae0de-9bc2-4e6e-b619-1eb577157da6",
+    "source": "synthetic_scenarios",
+    "chunk_index": 19,
+    "text": "Helios Maritime lists Sergey Molotov as director."
+  },
+  {
+    "id": "fea196be-4251-4978-9e9c-20b284e11b43",
+    "source": "synthetic_scenarios",
+    "chunk_index": 20,
+    "text": "Delta Chartering also lists Sergey Molotov as director."
+  },
+  {
+    "id": "7b2b7944-9ae7-4025-806e-80681575c3ca",
+    "source": "synthetic_scenarios",
+    "chunk_index": 21,
+    "text": "Sergey Molotov is affiliated with the Ministry of Energy, a state body."
+  },
+  {
+    "id": "947d3c54-1a2b-49c6-9921-662cd681227f",
+    "source": "synthetic_scenarios",
+    "chunk_index": 22,
+    "text": "Orion Ventures owns 40% of Nova Holdings."
+  },
+  {
+    "id": "c1af7261-17d5-4e00-aa51-2a795198c327",
+    "source": "synthetic_scenarios",
+    "chunk_index": 23,
+    "text": "Nova Holdings controls Atlas Partners."
+  },
+  {
+    "id": "a221b773-9675-4905-8a6c-b3b953aec7a3",
+    "source": "synthetic_scenarios",
+    "chunk_index": 24,
+    "text": "Atlas Partners owns shares in Orion Ventures, forming a circular loop."
+  },
+  {
+    "id": "6116a2b3-a70b-4845-a7c7-3317879b96a7",
+    "source": "synthetic_scenarios",
+    "chunk_index": 25,
+    "text": "Baltic Import Ltd paid Silver Route FZE for freight services."
+  },
+  {
+    "id": "a170786c-a050-4f2f-8676-bec7ee2060bc",
+    "source": "synthetic_scenarios",
+    "chunk_index": 26,
+    "text": "Silver Route FZE funded Obsidian Brokers."
+  },
+  {
+    "id": "38a07955-c042-458a-aa16-cde0854ebc5c",
+    "source": "synthetic_scenarios",
+    "chunk_index": 27,
+    "text": "Obsidian Brokers remitted funds to sanctioned Red Flag Minerals."
+  },
+  {
+    "id": "c21b6f1f-2294-49ed-a372-30a7485fef36",
+    "source": "synthetic_scenarios",
+    "chunk_index": 28,
+    "text": "Northbridge Advisory SPC is controlled via Elm Foundation."
+  },
+  {
+    "id": "8dbc9466-3830-4edd-afcb-f724f0d43a19",
+    "source": "synthetic_scenarios",
+    "chunk_index": 29,
+    "text": "Elm Foundation is controlled by Larch Nominees."
+  },
+  {
+    "id": "09850bc7-ee50-46cc-96f6-2d902c3567c8",
+    "source": "synthetic_scenarios",
+    "chunk_index": 30,
+    "text": "Larch Nominees is ultimately controlled by Chang Wei."
+  },
+  {
+    "id": "5ff1aa79-faf4-4609-af27-c90f090d1fa7",
+    "source": "synthetic_scenarios",
+    "chunk_index": 31,
+    "text": "Emerald Gate LLC uses Bank Account BA-77192."
+  },
+  {
+    "id": "668dee55-dfa0-4f12-a5e0-64013eed7eae",
+    "source": "synthetic_scenarios",
+    "chunk_index": 32,
+    "text": "Neptune Clearing also uses Bank Account BA-77192."
+  },
+  {
+    "id": "967f9063-d1f5-4a28-8308-46d771b10ee2",
+    "source": "synthetic_scenarios",
+    "chunk_index": 33,
+    "text": "First Vale Trading shares Bank Account BA-77192 with both."
+  },
+  {
+    "id": "3be8aeb3-7d66-4eac-8683-c99dafcc3d5f",
+    "source": "synthetic_scenarios",
+    "chunk_index": 34,
+    "text": "Blue Reef Corporate Services registered Harborline SA."
+  },
+  {
+    "id": "8d2708b5-d315-4c25-afae-21893eccd5ba",
+    "source": "synthetic_scenarios",
+    "chunk_index": 35,
+    "text": "Blue Reef Corporate Services registered Dune Path Ltd."
+  },
+  {
+    "id": "19b35c4e-0c88-44ce-aab7-ccc3d400957d",
+    "source": "synthetic_scenarios",
+    "chunk_index": 36,
+    "text": "Blue Reef Corporate Services registered Copper Crest Inc."
+  },
+  {
+    "id": "f6b3bbdf-8d75-4238-ab9f-c9a84e6ef9f7",
+    "source": "synthetic_scenarios",
+    "chunk_index": 37,
+    "text": "Luma Capital and Granite Freight share director Pavel Ivanenko."
+  },
+  {
+    "id": "c3b3c4e9-a07e-4e11-82d6-51eb2e8c4e2b",
+    "source": "synthetic_scenarios",
+    "chunk_index": 38,
+    "text": "Pavel Ivanenko also serves as director of sanctioned Black Harbor Metals."
+  },
+  {
+    "id": "3230dd85-bcee-4064-8cb4-fa3c70e54861",
+    "source": "synthetic_scenarios",
+    "chunk_index": 39,
+    "text": "Azure Import, Reefline Cargo, and Tundra Exports all share address 88 Coral Street."
+  },
+  {
+    "id": "0d872f1a-8667-4409-ae6e-06b90c101716",
+    "source": "synthetic_scenarios",
+    "chunk_index": 40,
+    "text": "Tundra Exports is a sanctioned entity."
+  },
+  {
+    "id": "293e99a9-bb09-4854-b888-e750b43978bc",
+    "source": "synthetic_scenarios",
+    "chunk_index": 41,
+    "text": "Lotus Finance funded Dubai Gateway FZE."
+  },
+  {
+    "id": "7e1644a5-eb70-4dd5-ad05-533414593651",
+    "source": "synthetic_scenarios",
+    "chunk_index": 42,
+    "text": "Dubai Gateway FZE paid Baltic Resource OU."
+  },
+  {
+    "id": "b8c54be2-ee51-4749-ba2c-bc712e0850c7",
+    "source": "synthetic_scenarios",
+    "chunk_index": 43,
+    "text": "Baltic Resource OU transacted with sanctioned entity RU-99."
+  },
+  {
+    "id": "d70a7519-d821-4fbe-a0f4-f975bd7a7227",
+    "source": "synthetic_scenarios",
+    "chunk_index": 44,
+    "text": "Atlas Medical Supplies is owned by Pearl Midco."
+  },
+  {
+    "id": "58ee895f-c0b7-402d-8e97-e16f31c11160",
+    "source": "synthetic_scenarios",
+    "chunk_index": 45,
+    "text": "Pearl Midco is controlled by North Channel Holdings."
+  },
+  {
+    "id": "ed65d22e-dde8-4b0a-a5d9-cb09b9f647f1",
+    "source": "synthetic_scenarios",
+    "chunk_index": 46,
+    "text": "North Channel Holdings is controlled by sanctioned individual Petrov."
+  },
+  {
+    "id": "acdf8fec-482c-42b5-a982-8ad9697b6d70",
+    "source": "synthetic_scenarios",
+    "chunk_index": 47,
+    "text": "Riverbend Exchange routes rapid pass-through transfers via Falcon Custody."
+  },
+  {
+    "id": "f5c46140-d0b7-4864-ba56-b9b040767368",
+    "source": "synthetic_scenarios",
+    "chunk_index": 48,
+    "text": "Falcon Custody passes funds through Tidebridge Finance."
+  },
+  {
+    "id": "670c2b98-3500-4a0d-af44-c17663becf14",
+    "source": "synthetic_scenarios",
+    "chunk_index": 49,
+    "text": "Meridian Health Ventures is held by Greyline Holdings."
+  },
+  {
+    "id": "1e6ee2e0-4a27-448d-a34d-7fa81cd95503",
+    "source": "synthetic_scenarios",
+    "chunk_index": 50,
+    "text": "Greyline Holdings is controlled by PEP Azarov Dmitri."
+  },
+  {
+    "id": "ea54d7ed-fcdb-44e6-9fbb-d093a4688710",
+    "source": "synthetic_scenarios",
+    "chunk_index": 51,
+    "text": "Pinebridge Traders paid Solaris FZE."
+  },
+  {
+    "id": "228f7d52-8d55-4b11-8f32-d606c20aea7f",
+    "source": "synthetic_scenarios",
+    "chunk_index": 52,
+    "text": "Solaris FZE paid Kappa Finance."
+  },
+  {
+    "id": "e29ee553-841c-41f6-8b2a-82bf694d0430",
+    "source": "synthetic_scenarios",
+    "chunk_index": 53,
+    "text": "Kappa Finance remitted to sanctioned entity CN-17."
+  },
+  {
+    "id": "c9f8cb64-b1f3-44d3-8c0e-6abc854ae9f1",
+    "source": "synthetic_scenarios",
+    "chunk_index": 54,
+    "text": "Crescent Bio Ltd is owned by Trident Holdings."
+  },
+  {
+    "id": "85fd1bfc-cfd9-4c6f-94fc-616660e00789",
+    "source": "synthetic_scenarios",
+    "chunk_index": 55,
+    "text": "Trident Holdings is owned by Silver Reed Corp."
+  },
+  {
+    "id": "8fdc464d-40cf-4e44-8826-d7c9151f10bd",
+    "source": "synthetic_scenarios",
+    "chunk_index": 56,
+    "text": "Silver Reed Corp's beneficiary is Morozov."
+  },
+  {
+    "id": "8ecd081e-b9b8-4f9e-94f8-5deede7543f8",
+    "source": "synthetic_scenarios",
+    "chunk_index": 57,
+    "text": "Alta Freight Solutions, Harborline SA, and Delta Marine Brokers all transact with sanctioned Red Lantern Commodities."
+  },
+  {
+    "id": "b8954fbe-bdff-434a-81e1-3486630c2fbf",
+    "source": "synthetic_scenarios",
+    "chunk_index": 58,
+    "text": "PEP Natalia Sokolova controls East Crown Foundation."
+  },
+  {
+    "id": "0dc6e3bd-26d6-45af-b701-e79c1b9ab6dc",
+    "source": "synthetic_scenarios",
+    "chunk_index": 59,
+    "text": "East Crown Foundation appoints directors at Westbridge Capital."
+  },
+  {
+    "id": "b360df28-8eff-408f-b122-ce6f52addcea",
+    "source": "synthetic_scenarios",
+    "chunk_index": 60,
+    "text": "Arctic Minerals PLC is sanctioned and controls Polar Shipping."
+  },
+  {
+    "id": "f20f94b0-5d05-4367-bde7-87e928161da7",
+    "source": "synthetic_scenarios",
+    "chunk_index": 61,
+    "text": "Polar Shipping controls Glacier Finance."
+  },
+  {
+    "id": "7db5dc2b-086f-4307-b954-df55d32d1e55",
+    "source": "synthetic_scenarios",
+    "chunk_index": 62,
+    "text": "NovaTech Distribution and Volga Electronics share board member Ivan Lebedev."
+  },
+  {
+    "id": "e437d184-1806-4859-a1bd-936c05fe3596",
+    "source": "synthetic_scenarios",
+    "chunk_index": 63,
+    "text": "Volga Electronics is under sanctions."
+  },
+  {
+    "id": "e5f17fd3-83ae-4c00-8837-4beb49d9fe53",
+    "source": "synthetic_scenarios",
+    "chunk_index": 64,
+    "text": "Crownline Energy pays Helix Trade."
+  },
+  {
+    "id": "815569c0-1c12-4ef5-bad7-b46faedf5533",
+    "source": "synthetic_scenarios",
+    "chunk_index": 65,
+    "text": "Helix Trade transacted with Red Banner Metals, a sanctioned entity."
+  },
+  {
+    "id": "e6c77ad8-768f-419c-bd7d-1f22a7758141",
+    "source": "synthetic_scenarios",
+    "chunk_index": 66,
+    "text": "Beacon Investment Partners is owned by BVI Holdco Gamma."
+  },
+  {
+    "id": "e5774b6d-212e-4a62-b16a-296654f4270f",
+    "source": "synthetic_scenarios",
+    "chunk_index": 67,
+    "text": "BVI Holdco Gamma is owned by Cayman SPV Theta."
+  },
+  {
+    "id": "d70288b3-324e-4c81-b8de-3d39966c4926",
+    "source": "synthetic_scenarios",
+    "chunk_index": 68,
+    "text": "Cayman SPV Theta is owned by Cyprus Trust Iota."
+  },
+  {
+    "id": "0ed14060-8827-4fb9-977c-2c1f46e86f80",
+    "source": "synthetic_scenarios",
+    "chunk_index": 69,
+    "text": "Cyprus Trust Iota's beneficiary is Anton Kruger."
+  },
+  {
+    "id": "327168a4-405a-4e3d-a826-da6b584e7880",
+    "source": "synthetic_scenarios",
+    "chunk_index": 70,
+    "text": "Summit Advisory Group resolves to two final beneficiaries: Layla Haddad and Omar Nasser."
+  },
+  {
+    "id": "8c9f9b5c-f652-4944-8266-e90abf3fc886",
+    "source": "synthetic_scenarios",
+    "chunk_index": 71,
+    "text": "Orion Pay routed transfers via Delta Correspondent AG."
+  },
+  {
+    "id": "a544a274-bdac-46e0-917b-d19417eda2e5",
+    "source": "synthetic_scenarios",
+    "chunk_index": 72,
+    "text": "Delta Correspondent AG paid sanctioned entity MX-44."
+  },
+  {
+    "id": "40515826-6af1-4935-8875-fc925ae408f1",
+    "source": "synthetic_scenarios",
+    "chunk_index": 73,
+    "text": "Frostline Brokers is the bridge entity connecting Sunrise Commodities to sanctioned entity OFAC-12."
+  },
+  {
+    "id": "53a95e30-5955-4974-899a-f2b1f41e9a53",
+    "source": "synthetic_scenarios",
+    "chunk_index": 74,
+    "text": "Lagoon Ventures, Coral Assets, and Nereid Trading are all ultimately controlled by Viktor Merenkov through layered trusts."
+  }
+]

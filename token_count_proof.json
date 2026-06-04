@@ -1,0 +1,33 @@
+{
+  "model": "gemini-1.5-flash",
+  "counted_at_utc": "2026-05-27T12:40:10.902530+00:00",
+  "input_path": "/home/ubuntu/Documents/WEBmemory/backend/data",
+  "total_files": 3044,
+  "total_tokens": 913931776,
+  "breakdown": {
+    "sec_edgar": {
+      "path": "/home/ubuntu/Documents/WEBmemory/backend/data/sec_edgar",
+      "file_count": 2982,
+      "token_count": 913738969,
+      "method": "gemini_calibrated_estimate",
+      "meta": {
+        "calibration_ratio_tokens_per_char": 0.332557,
+        "calibration_files_used": 30,
+        "direct_counted_files": 0,
+        "estimated_files": 2982
+      }
+    },
+    "wikipedia": {
+      "path": "/home/ubuntu/Documents/WEBmemory/backend/data/wikipedia",
+      "file_count": 62,
+      "token_count": 192807,
+      "method": "gemini_calibrated_estimate",
+      "meta": {
+        "calibration_ratio_tokens_per_char": 0.212108,
+        "calibration_files_used": 30,
+        "direct_counted_files": 0,
+        "estimated_files": 62
+      }
+    }
+  }
+}

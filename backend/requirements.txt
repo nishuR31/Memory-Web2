@@ -1,0 +1,17 @@
+fastapi
+uvicorn
+pydantic
+python-dotenv
+pyTigerGraph
+groq
+networkx
+numpy
+faiss-cpu
+requests
+google-generativeai
+chromadb
+sentence-transformers
+bert-score
+transformers
+torch
+wikipedia-api
