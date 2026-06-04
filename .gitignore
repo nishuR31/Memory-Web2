@@ -57,4 +57,3 @@ benchmark_metrics_by_scenario.md
 
 # Local alternate package-manager lockfile
 frontend/bun.lock
-*.faiss
